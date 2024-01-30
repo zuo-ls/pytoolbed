@@ -1,6 +1,7 @@
 import PyPDF2
 
 def remove_annotations(pdf_path):
+    """Remove annotations from a PDF file."""
     with open(pdf_path, 'rb') as file:
         reader = PyPDF2.PdfFileReader(file)
         writer = PyPDF2.PdfFileWriter()
