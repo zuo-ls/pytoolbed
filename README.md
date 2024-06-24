@@ -5,12 +5,7 @@ This repository contains several files to help you process your PDF files. You c
 1. MarginAdd: Add margins to your PDF file(s).
 2. PagesMerge: Merge multiple pages of a PDF file into one long page.
 3. PDFMerge: Merge multiple PDF files into one.
-
-一些自用的pdf处理脚本, 现在支持的功能包括: 
-
-1. MarginAdd: 给PDF上下左右添加空白边距方便笔记.
-2. PagesMerge: 将多页pdf合并成一个长页.
-3. PDFMerge: 将多个PDF文件合并成一个文件.
+4. image2pdf
 
 ### Dependency
 
@@ -44,4 +39,11 @@ pypdf2 2.2.0
    ```python
    folder_path = 'your/dir/pth' # your folder path that contains pdf files
    PDFMerge(folder_path,do_del_pdf_after_merge=False)()
+   ```
+
+4. Merge multiple images into one pdf.
+   ```python
+   images_dir = 'pth/to/images/'
+   out_pth = images_dir + 'out.pdf'
+   image_to_pdf(images_dir, out_pth)
    ```
