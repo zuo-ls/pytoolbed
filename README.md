@@ -1,49 +1,28 @@
-# PDFProcess
+# pytoolbed
 
-This repository contains several files to help you process your PDF files. You can use the following functionalities:
+Simplify your work using python-based tool.
 
-1. MarginAdd: Add margins to your PDF file(s).
-2. PagesMerge: Merge multiple pages of a PDF file into one long page.
-3. PDFMerge: Merge multiple PDF files into one.
-4. image2pdf
+## currently support tools
 
-### Dependency
+### 1 pdf tools
 
-```python
-pypdf2 2.2.0 
-```
+* MarginAdd: Add margins to your PDF file(s).
+* PagesMerge: Merge multiple pages of a PDF file into one long page.
+* PDFMerge: Merge multiple PDF files into one.
+* image2pdf
 
-### Usage
+### 2 tex-eq
 
-1. Add margin to pdf file(s).
+handle your math equations.
 
-   ```python
-   marginadder = MarginAdd(margin_w=120,margin_h=0,addblankpage=[0])
-   
-   # try the following to add margin to a single file
-   marginadder.process_single_file('XXX.pdf')
-   
-   # try the following to add margin to all pdf files in a folder
-   marginadder.process_multi_files('your/path/to/pdfs/folder')
-   ```
+directly use notebooks, which can read from and paste contents to the clipboard.
 
-2. Merge multiple pages of a pdf file into one long page.
+- OCR: read image to latex.
 
-   ```python
-   path = 'XXX.pdf'
-   PagesMerge(path)()
-   ```
+  - read your img of equations saving in your clipboard and generate latex str, the outputs will auto save in your clipboard, therefore you can directly paste.
+- tex to mathml for word.
 
-3. Merge multiple pdf files into one.
+  - read latex str and change it to mathml, which auto saved in clipboard, the output can be directly paste into a word file.
+- latex str to image for PPT.
 
-   ```python
-   folder_path = 'your/dir/pth' # your folder path that contains pdf files
-   PDFMerge(folder_path,do_del_pdf_after_merge=False)()
-   ```
-
-4. Merge multiple images into one pdf.
-   ```python
-   images_dir = 'pth/to/images/'
-   out_pth = images_dir + 'out.pdf'
-   image_to_pdf(images_dir, out_pth)
-   ```
+  - generate png given latex string/read it from clipboard, the png is saved in clipboard, you can just paste.
