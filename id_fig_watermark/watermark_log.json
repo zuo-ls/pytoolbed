@@ -1,0 +1,12 @@
+[
+    {
+        "timestamp": "2025-07-30T14:49:48.990326",
+        "input_file": "sample.jpg",
+        "output_file": "sample_output.jpeg",
+        "watermark_text": "本文件仅租房子用的",
+        "signature": "Lis-Valid:250801to250831",
+        "encoded_signature": "ce9195c2aa55|gAAAAABoicCMqX8xaJRY4xcm_Ow6FRpZTY5cvpUtDbVTAucVODe1WZra1CFVM8N1q7nNuWovpjfzQTn2s6SlCu7idHFtBxQL05DqVz9R-l6OA0yWY6wieyU=|ZjpEFDYIBYoMqIz6zHswyw==",
+        "process_timestamp": 1753858188,
+        "location": "bottom_right"
+    }
+]
