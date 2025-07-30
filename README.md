@@ -29,3 +29,4 @@ directly use notebooks, which can read from and paste contents to the clipboard.
 
 ### -1 others
 image reducer
+resize_image
