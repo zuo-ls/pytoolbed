@@ -29,6 +29,8 @@ directly use notebooks, which can read from and paste contents to the clipboard.
 
 ### 3 id fig watermark
 
+A powerful Python tool for adding secure, verifiable watermarks to images, particularly designed for identity documents and sensitive images.
+
 给身份证打码用的，图片模糊 + 水印 + 一个独有编码。(代码由 AI 辅助生成。)
 
 ### -1 others
