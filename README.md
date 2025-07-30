@@ -28,5 +28,5 @@ directly use notebooks, which can read from and paste contents to the clipboard.
   - generate png given latex string/read it from clipboard, the png is saved in clipboard, you can just paste.
 
 ### -1 others
-image reducer
-resize_image according to the journels' ' requirements.
+image reducer:
+resize_image according to the journels' requirements.
