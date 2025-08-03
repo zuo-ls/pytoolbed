@@ -9,6 +9,7 @@ def format_bbl_entry(entry):
     title = entry.fields.get('title', '')
     year = entry.fields.get('year', '')
     journal = entry.fields.get('journal', '')
+    booktitle = entry.fields.get('booktitle', '')
     volume = entry.fields.get('volume', '')
     number = entry.fields.get('number', '')
     pages = entry.fields.get('pages', '')
@@ -27,6 +28,10 @@ def format_bbl_entry(entry):
                 bbl.append('(' + number + ')')
         if pages:
             bbl.append(':' + pages)
+    elif booktitle:
+        bbl.append(' In \\textit{' + booktitle + '}')
+        if pages:
+            bbl.append(', pages ' + pages)
     if year:
         bbl.append(' (' + year + ').')
     

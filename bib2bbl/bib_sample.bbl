@@ -1,5 +1,7 @@
 \begin{thebibliography}{99}
 
+\bibitem{sample_conference} Yes, I am a sample author.  Sample Conference.  In \textit{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition} , pages 0--42  (2025).
+
 \bibitem{smith2020example} Smith, John and Doe, Jane.  An Example Paper.  \textit{Journal of Examples}  1 (2) :34--56  (2020).
 
 \bibitem{zhang2019book} Zhang, Wei and Li, Ming.  示例书籍.  (2019).
